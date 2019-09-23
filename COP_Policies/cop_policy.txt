@@ -1,0 +1,12 @@
+src or dst port 880 => offload tls mss 32 bind random 
+src or dst port 881 => offload tls mss 32 bind random 
+src or dst port 882 => offload tls mss 32 bind random 
+src or dst port 883 => offload tls mss 32 bind random 
+src or dst port 884 => offload tls mss 32 bind random 
+src or dst port 885 => offload tls mss 32 bind random 
+src or dst port 886 => offload tls mss 32 bind random 
+src or dst port 887 => offload tls mss 32 bind random 
+src or dst port 888 => offload tls mss 32 bind random 
+src or dst port 889 => offload tls mss 32 bind random 
+src or dst port 890 => offload tls mss 32 bind random 
+

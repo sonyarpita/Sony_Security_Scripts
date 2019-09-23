@@ -1,0 +1,4 @@
+all => offload bind random !nagle
+src or dst port 443 => offload tls mss 32 bind random !nagle
+src or dst port 989 => offload tls mss 32 bind random !nagle
+

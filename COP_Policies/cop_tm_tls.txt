@@ -1,0 +1,13 @@
+#src host 102.10.10.21 => offload class 0
+src or dst port 443 => offload tls mss 32 bind random !nagle class 0 
+src or dst port 989 => offload tls mss 32 bind random !nagle class 0
+src or dst port 990 => offload tls mss 32 bind random !nagle class 0
+src or dst port 992 => offload tls mss 32 bind random !nagle class 0
+src or dst port 993 => offload tls mss 32 bind random !nagle class 0
+src or dst port 994 => offload tls mss 32 bind random !nagle class 0
+src or dst port 995 => offload tls mss 32 bind random !nagle class 0
+src or dst port 1364 => offload tls mss 32 bind random !nagle class 0
+
+
+
+
