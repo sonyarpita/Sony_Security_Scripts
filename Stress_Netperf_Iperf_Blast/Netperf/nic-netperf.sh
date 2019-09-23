@@ -1,0 +1,2 @@
+./5000-Netperf_NetQ_TCP_UDP_STREAM.pl 102.19.19.96 &
+./5000-Netperf_NetQ_TCP_UDP_STREAM.pl 102.20.20.96
