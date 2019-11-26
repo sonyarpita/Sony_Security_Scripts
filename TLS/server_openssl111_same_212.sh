@@ -1,4 +1,4 @@
-killall httpd
+#killall httpd 
 ./openssl s_server -key /root/server.key -cert /root/server.crt -accept 443 -cipher $1 -WWW -4 -quiet -tls1_2 &
 ./openssl s_server -key /root/server.key -cert /root/server.crt -accept 989 -cipher $1 -WWW -4 -quiet -tls1_2 &
 ./openssl s_server -key /root/server.key -cert /root/server.crt -accept 990 -cipher $1 -WWW -4 -quiet -tls1_2 &
