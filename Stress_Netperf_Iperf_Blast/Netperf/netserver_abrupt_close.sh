@@ -1,3 +1,7 @@
+# List of Arguments -
+# $1 - start port
+# $2 - range of ports
+
 start=$1
 range=$2
 
