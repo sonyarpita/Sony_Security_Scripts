@@ -37,5 +37,18 @@ do
 	ps -ef | grep -i netperf >> KILLED_netperf.txt 
 	sleep 60 
 	echo "Completion of Iteration: $iter" >> KILLED_netperf.txt
+	        
+	if [ `expr $iter % 10` -eq 0 ]
+        then
+                echo "Clearing cache. Wait........"
+                free -m
+                echo 1 > /proc/sys/vm/drop_caches
+                echo 2 > /proc/sys/vm/drop_caches
+                echo 3 > /proc/sys/vm/drop_caches
+                free -m
+        else
+                echo "Continuing further"
+        fi
+
 done
 
