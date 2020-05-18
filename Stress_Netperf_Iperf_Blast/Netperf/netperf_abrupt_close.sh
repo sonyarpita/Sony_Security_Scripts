@@ -8,13 +8,16 @@
 #range specifies number of connections per port 
 
 if [[ $# -ne 5 ]]; then
-    echo "Illegal number of parameters"
-    echo "Please enter following parameters"
+    echo "Illegal number of parameters. Please enter following parameters"
+    echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
     echo "Beginning port number"
     echo "Port number range"
     echo "IP of Peer's Port0"
     echo "IP of Peer's Port1"
     echo "Peer's corporate IP"
+    echo "================================================================================================"
+    echo "Example: [root@host~]# sh netperf_abrupt_close.sh 10000 500 102.1.1.79 102.2.2.79 10.193.80.79"
+    echo "================================================================================================"
     exit 2
 fi
 
