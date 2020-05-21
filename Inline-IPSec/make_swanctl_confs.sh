@@ -6,7 +6,7 @@ echo "gw-gw-$i {
      remote_addrs = 102.$i.$i.77
      local {
         auth = pubkey
-        certs = viper1p${i}Cert.der
+        certs = viper1Certp${i}.der
         id = "C=CH, O=blr.asicdesigners.com, CN=viper1p$i"
      }
      remote {
