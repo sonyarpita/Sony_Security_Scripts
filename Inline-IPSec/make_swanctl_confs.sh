@@ -19,7 +19,7 @@ echo "gw-gw-$i {
            rekey_time = 5400
            esp_proposals = aes128gcm96-x25519-esn-noesn
            #esp_proposals = aes128gcm96-x25519
-           hw_offload = no
+           hw_offload = yes
            mode = tunnel
         }
      }
