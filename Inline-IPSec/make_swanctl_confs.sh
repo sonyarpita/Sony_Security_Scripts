@@ -2,16 +2,16 @@ rm -rf text.txt
 for ((i=31; i<=38; i++))
 do
 echo "gw-gw-$i {
-     local_addrs  = 102.$i.$i.79
-     remote_addrs = 102.$i.$i.77
+     local_addrs  = 102.$i.$i.77
+     remote_addrs = 102.$i.$i.79
      local {
         auth = pubkey
-        certs = viper1p${i}Cert.der
-        id = "C=CH, O=blr.asicdesigners.com, CN=viper1p$i"
+        certs = cool1Certp${i}.der
+        id = "C=CH, O=blr.asicdesigners.com, CN=cool1p$i"
      }
      remote {
         auth = pubkey
-        id = "C=CH, O=blr.asicdesigners.com, CN=cool1p$i"
+        id = "C=CH, O=blr.asicdesigners.com, CN=viper1p$i"
      }
      children {
         net-net-$i {
