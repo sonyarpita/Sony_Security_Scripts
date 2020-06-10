@@ -1,11 +1,16 @@
-modprobe brd rd_nr=1 rd_size=100000
+modprobe brd rd_nr=1 rd_size=4000000
 
-#Cryptographic device mapper device was created in LUKS encryption mode :
+
 cryptsetup -v luksFormat --cipher="aes-xts-plain64" /dev/ram0
 
-#The partition was unlocked using the below command :
-cryptsetup open --type luks /dev/ram0 map 
+cryptsetup open --type luks /dev/ram0 map
 
-#The disk was formatted and mounted.
 mkfs.ext3 /dev/mapper/map
 
+
+mount /dev/mapper/map /mnt/
+
+cd /mnt/
+pwd
+
+ fio --ioengine=libaio --direct=1 --runtime=30 --time_based --thread=1 --numjobs=16 --iodepth=16 --bs=4K --rw=randread --group_reporting  --name=xx --size 1M 
